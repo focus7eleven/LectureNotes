@@ -1,0 +1,2 @@
+# LectureNotes
+good good study
