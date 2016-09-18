@@ -1,4 +1,4 @@
-###Emmet
+### Emmet
 
 - div>p>span
 - ul>li*5
@@ -7,14 +7,14 @@
 - p{HelloWorld}
 
 
-###Atom
+### Atom
 - alt-d delete to the end of the word
 - alt-h delete to the begining of the word
 - ctrl-e move to the end of the line
 - ctrl-a move to the begining of the line
 
 
-###ES6
+### ES6
 - Babel转码器
 	- 配置文件 .babelrc > 设置转码规则和插件
 	- babel-register > 改写require命令，为它加上一个钩子。对require的文件转码。
@@ -68,10 +68,10 @@
 
 
 
-###React.js
+## #React.js
 
 
-###Redux
+### Redux
 
 - 单一数据源：state维护在唯一的object tree中，且这个tree只存在于唯一的一个store中
 - state是只读的(immutable tree)，改变state的唯一方法是触发action。
@@ -98,7 +98,7 @@
 
 
 
-###Full-Stack-Tutorial-Of-Redux
+### Full-Stack-Tutorial-Of-Redux
 - Mocha > a test framework
 - Chai > an assertion/expectation library used in tests
 - Immutable > provide a number of data structures
@@ -109,9 +109,39 @@
 
 
 
-###Webpack
+### Webpack
 
-####Compared with others
+#### Compared with others
 
-#####Gulp
--
+##### Gulp
+- based on the concept of piping
+- Sources matches to files. Filters perform operations on sources(e.g., convert to javascript). Finally, the results get passed to sinks(e.g., your build directory).
+
+##### Browserify
+- one solution to the module problem
+- provides a way to bundle CommonJS modules together
+- the Browserify ecosystem is composed of a lot of small modules
+- adheres to the Unix philosophy
+- a little easier to adopt than Webpack, a good alternative to it.
+
+##### Why Webpack
+- Hot Module Replacement
+	- allows application to maintain its state
+
+- Bundle Splitting
+	- allows you to split bundles in various ways
+	- even load them dynamically as your application gets executed
+	- allows the client to reload only a small part of the data in the ideal case
+
+- Assset Hashing
+	- easily inject a hash to each bundle name
+	- allows you to invalidate bundles on the client side as changes are made
+
+- Loaders and Plugins
+	- if missing sth, there are loaders and plugins available that allow you to go further
+
+
+#### Developing with Webpack
+- driven by webpack.config.js (heart of it)
+- it defines the inputs and the outputs of your project
+- it describes the types of transformations you perform (defined using loaders and plugins)
