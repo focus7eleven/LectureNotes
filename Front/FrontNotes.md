@@ -141,7 +141,7 @@
 	- if missing sth, there are loaders and plugins available that allow you to go further
 
 
-#### Developing with Webpack
+#### Developing with webpack
 - driven by webpack.config.js (heart of it)
 - it defines the inputs and the outputs of your project
 - it describes the types of transformations you perform (defined using loaders and plugins)
