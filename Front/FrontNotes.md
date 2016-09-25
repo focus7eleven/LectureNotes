@@ -6,7 +6,6 @@
 - p[title="value"]
 - p{HelloWorld}
 
-
 ### Atom
 - alt-d delete to the end of the word
 - alt-h delete to the begining of the word
@@ -145,3 +144,29 @@
 - driven by webpack.config.js (heart of it)
 - it defines the inputs and the outputs of your project
 - it describes the types of transformations you perform (defined using loaders and plugins)
+
+#### Loading assets
+- CommonJS
+
+```
+var MyModule = require('./MyModule');
+
+// export at module root
+module.exports = function() {...}
+
+// alternatively, export individual functions
+exports.hello = function() {...}
+```
+
+- ES6
+
+```
+import MyModule from './MyModule.js';
+
+// export at module root
+export default function () { ... };
+
+// or export as module function,
+// you can have multiple of these per module
+export function hello() {...};
+```
